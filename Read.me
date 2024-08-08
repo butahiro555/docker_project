@@ -1,12 +1,12 @@
 1. $ git clone https://github.com/butahiro555/docker_project.git
 2．$ cd docker_project
 3. $ mv .env.example .env
-4. Setting your parameter on .env-file.
+4. Setting your parameter on .env.
 5. $ docker compose up -d
 6. $ cd laravel
 7. $ docker compose exec -it app bash
 8. # composer create-project --prefer-dist laravel/laravel . "10.*"  #Laravelのバージョンは任意で決定
 9. # chmod -R guo+w storage
 10. # php artisan storage:link
-11. Setting your parameter on docker_project/laravel/.env-file.
+11. Link the parameters mysql_parameter in docker_project/.env and DB_parameter in laravel/.env.
 12. # php artisan migrate
